@@ -1,0 +1,8 @@
+Drew's Surface@DrewSurface MINGW64 ~/Documents/COLNYC20190716DATA (master)
+$ C:/ProgramData/drew/Anaconda3/python.exe "c:/Users/Drew's Surface/Documents/P
+ythonStuff/PyPoll/main.py"
+3521001
+Traceback (most recent call last):
+  File "c:/Users/Drew's Surface/Documents/PythonStuff/PyPoll/main.py", line 25, in <module>
+    candadite = row(2)
+TypeError: 'list' object is not callable
