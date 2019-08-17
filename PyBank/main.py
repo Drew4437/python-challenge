@@ -35,34 +35,53 @@ with open(csvpath, newline="") as csvfile:
     max_increase = max(change)
     min_increase = min(change)
     
-    i = 0
-    for row in change:
-        i = i+1
-        if row == max_increase:
+    i = 0+1
+    # print(row) <====Need to reset
+    
+    for row2 in change:
+        i = i
+        if row2 == max_increase:
             break
         else: 
-            i = i+1      
+            i = i+1 
+    print(row2) 
     x=0
-    for row in dates:
+    for row3 in dates:
         if x == i:
-            max_date = row
+            max_date = row3
+            break
         else:
             x=x+1
-
-    a = 0
-    for row in change:
-        a = a+1
-        if row == min_increase:
+    # print(row3) 
+    # print(dates)
+    # print(change)
+    # print(row3)
+    # print (i)
+    # print (x)
+    # print(max_increase)
+    # print(max_date)
+    
+    a = 0+1
+    for row4 in change:
+        a = a
+        if row4 == min_increase:
             break
         else: 
             a = a+1       
     b=0
-    for row in dates2:
+    for row5 in dates2:
         if b == a:
-            min_date = row
+            min_date = row5
+            break
         else:
             b=b+1
-    
+    # print(row)
+    # print (a)
+    # print (b)
+    # print(min_increase)
+    # print(min_date)
+
+
     # Printing output:
     print("Financial Analysis")
     print("----------------------------")
